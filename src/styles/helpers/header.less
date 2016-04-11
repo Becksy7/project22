@@ -1,0 +1,70 @@
+.header {
+	background: @black;
+    //height: 100px;
+
+    &-partner{
+        float: left;
+        &__img{
+            height: 80px;
+            margin: 10px 0;
+            @media (max-width: 1200px) {
+                height: 50px;
+                margin: 8px 0;
+            }
+        }
+    }
+    &-logo{
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        &__img{
+            height: 51px;
+            display: inline-block;
+            margin: 20px 0;
+            @media (max-width: 1200px) {
+                height: 34px;
+            }
+        }
+        &__season{
+            position: absolute;
+            display: block;
+            width: 100%;
+            text-align: center;
+            bottom: -17px;
+            font-family: @got-font-family;
+            font-size: 31px;
+        }
+    }
+    &-info{
+        float: right;
+        white-space: nowrap;
+
+        &__logo{
+            height: 100px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: -30px;
+            @media (max-width: 1200px) {
+                height: 84px;
+                margin-bottom: -10px;
+            }
+        }
+        &__time{
+            font-size: 34px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            @media (max-width: 1200px) {
+                font-size: 22px;
+            }
+        }
+        &__day{
+            font-size: 12px;
+            text-align: center;
+            display: block;
+            @media (max-width: 1200px) {
+                font-size: 7px;
+            }
+        }
+    }
+}

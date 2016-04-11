@@ -1,0 +1,68 @@
+//
+// general style for layouts
+//
+html {
+    color       : @black;
+
+    // to further use sizes in rem
+    //.media-for(font-size, @main_font_size); // the adaptive way
+    font-size : @main_font_size;
+    font-family: @base-font-family;
+
+    body {
+        color: @white;
+
+        width      : auto;
+
+        // nice fonts Safari
+        text-rendering         : optimizeLegibility;
+        -webkit-font-smoothing : antialiased;
+    }
+}
+
+// box-sizing to all
+*, *:before, *:after {
+    .box-sizing( border-box );
+}
+
+// container & wrapper
+.container {
+    width     : 100%;
+    max-width: @max_width;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.wrapper {
+    margin       : 0 auto;
+    position     : relative;
+    lost-utility : clearfix;
+}
+.layout-wrapper {
+
+    position     : relative;
+    //lost-utility : clearfix;
+
+    height: 100%;
+}
+//sticky-footer
+html, body{
+    height:100%;
+}
+
+.layout-wrapper{
+    display:table;
+    width:100%;
+}
+.layout-header, .layout-footer, .layout-main{
+    display:table-row;
+}
+.layout-header{
+    height:100px;
+}
+.layout-footer{
+    height: 40px;
+}
+
+.layout-main{
+    position: relative;
+}
