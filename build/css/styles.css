@@ -207,7 +207,7 @@ body,html{height:100%}
 }
 @media (max-width:767px){.form-group .radio-group span{font-size:12px}
 .tricky-side-block .mts-connection{margin:10px -20px 0;background:#ed1c24;position:relative;width:auto;height:auto;padding:10px 20px}
-.tricky-side-block .mts-connection:before{content:"";background:url(..//images/plate.png) no-repeat;width:430px;height:20px;position:absolute;top:-20px;right:0}
+.tricky-side-block .mts-connection:before{content:"";background:url(../images/plate.png) 59px -2px no-repeat;background-size:100% auto;width:400px;height:37px;display:block;position:absolute;top:-35px;right:0}
 }
 .tricky-side-block .mts-connection h2{font-size:14px}
 @media (max-width:767px){.tricky-side-block .mts-connection h2{font-size:12px;padding-right:130px;text-align:left}
