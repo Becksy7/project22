@@ -5,12 +5,23 @@ width: 430px;
   background-size: cover;
   float: left;
   padding: 40px 80px;
+  @media (max-width: 1200px) {
+    width: 370px;
+    height: 240px;
+    float: none;
+    position: relative;
+    bottom: 0;
+    margin: 35px auto;
+  }
   h2 {
     font-family: @base-font-family;
     font-size: 20.47px;
     font-weight: normal;
     font-style: normal;
     text-align: center;
+    @media (max-width: 1200px) {
+      font-size: 18.43px;
+    }
     a{
       color: @white;
     }
