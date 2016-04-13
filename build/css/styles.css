@@ -257,3 +257,9 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 @media (max-width:767px){.share-box-logo__img{height:14px}
 .share-box-logo__season{font-size:8px}
 }
+.about-social{float:right}
+.about-social .social-login{margin-top:0}
+.about-content{margin-left:350px;margin-right:0}
+.about-content video{background-color:#5b5c5e}
+.about-page{position:relative;width:100%}
+.about-page .about-mts{position:absolute;top:0;left:0}
