@@ -1,8 +1,20 @@
+.link-about {
+  font-family: @got-font-family;
+  font-size: 22.92px;
+  line-height: 27.7px;
+  font-weight: normal;
+  font-style: normal;
+  color: @white;
+  text-decoration: none;
+  margin: 20px;
+}
 .main-content {
+
   &-caption {
-    width: 60%;
+    width: 550px;
     padding: 0;
-    margin: 10% auto 0;
+    margin: 100px auto 0;
+    position: relative;
     h1 {
       font-family: @got-font-family;
       font-size: 50.86px;
@@ -14,16 +26,17 @@
     :before, :after {
       position: absolute;
       content: "";
-      left: 42%;
+      left: 50%;
+      margin-left: -115px;
       width: 230px;
       height: 1px;
       background: @gray;
     }
     :before {
-      top: 25%;
+      top: -45px;
     }
     :after {
-      bottom: 50%;
+      bottom: -45px;
     }
     @media (max-width: 1024px) {
       width: 45%;

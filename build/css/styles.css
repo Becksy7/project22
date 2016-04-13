@@ -83,6 +83,7 @@ body,html{height:100%}
 .client-style .utility-inline-block{display:inline-block!important}
 .client-style .strong{font-weight:700!important}
 .client-style .underline{text-decoration:underline!important}
+.content-button,.link-about{text-decoration:none;color:#FFF}
 .client-style .semistrong,.client-style strong.semi{font-weight:500!important}
 .client-style .cursive{font-style:italic!important}
 .header-partner{float:left}
@@ -132,13 +133,19 @@ body,html{height:100%}
 }
 .social-login{width:250px;height:100px;margin:8% auto}
 .social-login span{font-family:'Trajan Pro 3';font-size:22.92px;line-height:27.7px;font-weight:400;font-style:normal}
+.content-button,.mts-connection h2{font-family:'Gotham Pro',Arial,sans-serif;text-align:center}
 .social-login a{margin:15px 5px;display:inline-block}
-.mts-connection{width:430px;height:260px;background:url(..//images/plate.png) 50% 50% no-repeat;background-size:cover;border:1px solid red;float:left}
-.main-content-caption{width:60%;padding:0;margin:10% auto 0}
-.main-content-caption h1{font-family:'Trajan Pro 3',Arial,sans-serif;font-size:50.86px;line-height:61.47px;font-weight:400;font-style:normal;text-align:center}
-.main-content-caption :after,.main-content-caption :before{position:absolute;content:"";left:42%;width:230px;height:1px;background:#5b5c5e}
-.main-content-caption :before{top:25%}
-.main-content-caption :after{bottom:50%}
+.mts-connection{width:430px;height:260px;background:url(..//images/plate.png) 50% 50% no-repeat;background-size:cover;float:left;padding:40px 80px}
+.mts-connection h2{font-size:20.47px;font-weight:400;font-style:normal}
+.mts-connection h2 a{color:#FFF}
+.content-button{display:block;width:230px;height:60px;border:2px solid #FFF;font-size:18.58px;line-height:22.46px;font-weight:700;font-style:normal;text-transform:uppercase;margin:10px auto;padding-top:15px}
+.link-about,.main-content-caption h1{font-family:'Trajan Pro 3',Arial,sans-serif;font-weight:400;font-style:normal}
+.link-about{font-size:22.92px;line-height:27.7px;margin:20px}
+.main-content-caption{width:550px;padding:0;margin:100px auto 0;position:relative}
+.main-content-caption h1{font-size:50.86px;line-height:61.47px;text-align:center}
+.main-content-caption :after,.main-content-caption :before{position:absolute;content:"";left:50%;margin-left:-115px;width:230px;height:1px;background:#5b5c5e}
+.main-content-caption :before{top:-45px}
+.main-content-caption :after{bottom:-45px}
 @media (max-width:1024px){.main-content-caption{width:45%}
 .main-content-caption h1{font-size:46.5px;line-height:56.2px}
 .main-content-caption :after,.main-content-caption :before{width:220px}
