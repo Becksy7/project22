@@ -1,0 +1,196 @@
+.top-block{
+    padding-top: 10px;
+    .clearfix;
+    &__link{
+        float: left;
+
+        > a{
+            color: @white;
+            text-decoration: none;
+            font-family: @got-font-family;
+            font-size: 23px;
+            @media (max-width: 767px) {
+                font-size: 11px;
+            }
+        }
+    }
+    &__user{
+        float: right;
+    }
+}
+.user{
+    white-space: nowrap;
+    &__pic{
+        display: inline-block;
+        vertical-align: top;
+        background-color: @blue;
+        width: 40px;
+        height: 40px;
+        .border-radius(50%);
+        overflow: hidden;
+        img{
+            max-width: 100%;
+        }
+        @media (max-width: 767px) {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+    }
+    &__exit{
+        display: inline-block;
+        vertical-align: top;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        line-height: 40px;
+        .border-radius(50%);
+        background-color: fade(@black,30%);
+        @media (max-width: 767px) {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+        >a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            .icon;
+            .icon-exit;
+            text-align: center;
+            text-decoration: none;
+            @media (max-width: 767px) {
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+            }
+            &:before{
+                color: @white;
+                font-size: 20px;
+                margin: -2px 0 0;
+                line-height: 40px;
+                display: inline-block;
+                vertical-align: middle;
+                @media (max-width: 767px) {
+                    line-height: 20px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.question{
+    color: @white;
+    max-width: 580px;
+    margin: 20px auto;
+    clear: both;
+    .clearfix;
+    position: relative;
+    z-index: 1;
+    &__tl{
+        font-family: @got-font-family;
+        font-size: 40px;
+        padding: 0 35px;
+        text-align: center;
+        @media (max-width: 767px) {
+            font-size: 20px;
+            padding: 0 25px;
+        }
+    }
+}
+.form-group{
+    .radio-group{
+        display: block;
+        overflow: hidden;
+        margin: 10px 0;
+        span{
+            display: block;
+            border: 1px solid fade(@white,50%);
+            .border-radius(2px);
+            padding: 12px 12px 12px 48px;
+            position: relative;
+            font-size: 24px;
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+        input[type=radio]{
+            position: absolute;
+            top: -40px;
+            left: -40px;
+        }
+        input[type="radio"]:checked{
+            &+span{
+                border-color: @red;
+                background-color: fade(@red, 50%);
+                &:before{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    left: 12px;
+                    top:50%;
+                    margin-top: -11px;
+                    width: 22px;
+                    height: 16px;
+                    background: url("@{public}/images/tick.svg") no-repeat;
+                    .background-size(cover);
+                }
+            }
+        }
+    }
+}
+.tricky-side-block{
+    .mts-connection{
+        display: block;
+        float: none;
+        width: 300px;
+        height: 195px;
+        margin-top: -140px;
+        @media (max-width: 1200px) {
+            margin: 90px auto 20px;
+        }
+        @media (max-width: 767px) {
+            margin: 40px -20px 0;
+            background: @red;
+            position: relative;
+            width: auto;
+            height: auto;
+            padding: 10px 20px;
+            &:before{
+                content: "";
+                background: url('@{public}images/plate.png') 59px -2px no-repeat;
+                .background-size(100% auto);
+                width: 400px;
+                height: 37px;
+                display: block;
+                position: absolute;
+                top: -35px;
+                right: 0;
+            }
+        }
+        h2{
+            font-size: 14px;
+            @media (max-width: 767px) {
+                font-size: 12px;
+                padding-right: 130px;
+                text-align: left;
+            }
+        }
+        .content-button{
+            width: 146px;
+            height: 40px;
+            padding: 0;
+            line-height: 40px;
+            font-size: 13px;
+            font-weight: 600;
+            @media (max-width: 767px) {
+                position: absolute;
+                width: 120px;
+                right: 20px;
+                top: 50%;
+                margin-top: -20px;
+            }
+        }
+    }
+}

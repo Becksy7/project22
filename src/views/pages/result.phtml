@@ -1,0 +1,41 @@
+<div class="top-block">
+	<div class="top-block__link"><a href="#">О сериале</a></div>
+	<div class="top-block__user">
+		<div class="user">
+			<div class="user__pic">
+				<img src="">
+			</div>
+			<div class="user__exit">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="result">
+	<div class="result__tl">Твоя пара: Джон Сноу</div>
+	<section class="share-box" style="background-image: url(<?= publicdir("images/john_snow.jpg") ?>)">
+		<div class="share-box__b">
+			<div class="user share-box-user">
+				<div class="user__pic">
+					<img src="">
+				</div>
+				<div class="user__result">
+					<b>твоя пара</b><br>
+					Джон сноу
+				</div>
+			</div>
+		</div>
+		<footer>
+			<img class="share-box__partner" src="<?= publicdir("images/MTS_Logo_Brush_RU.svg") ?>">
+			<img class="share-box__fox-logo" src="<?= publicdir("images/fox-logo.png") ?>">
+			<div class="share-box-logo">
+				<img class="share-box-logo__img" src="<?= publicdir("images/logo.png") ?>">
+				<span class="share-box-logo__season">6 сезон</span>
+			</div>
+		</footer>
+	</section>
+	<a href="#" class="content-button content-button--big">Еще раз</a>
+</div>
+<div class="tricky-side-block">
+	<?php include "src/views/helpers/mts-connection.phtml"; ?>
+</div>
