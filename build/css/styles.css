@@ -1,9 +1,9 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+.icon:before,button,select{text-transform:none}
 html,mark{color:#000}
 .clean-ul-list,.client-style ul.clean{list-style:none}
 .header-logo,.layout-main,.layout-wrapper,.wrapper,sub,sup{position:relative}
 .header-info,.user{white-space:nowrap}
-.icon:before,button,select{text-transform:none}
 .icon:before,.user__exit>a:before{speak:none;-moz-osx-font-smoothing:grayscale}
 .clearfix:after,.question,.question:after,.share-box footer:after,.share-box:after,.top-block:after,.wrapper:after{clear:both}
 body{margin:0}
@@ -142,34 +142,46 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 .page-index{background:url(..//images/bg1.jpg) top center no-repeat #000;background-size:100% auto}
 @media (max-width:768px){.page-index{background:url(..//images/bg1.pad.jpg) top center no-repeat #000;background-size:100% auto}
 }
-.social-login{width:250px;height:100px;margin:8% auto}
+.social-login{width:250px;height:100px;margin:60px auto 0}
 .social-login span{font-family:'Trajan Pro 3';font-size:22.92px;line-height:27.7px;font-weight:400;font-style:normal}
 .content-button,.mts-connection h2{font-family:'Gotham Pro',Arial,sans-serif;font-style:normal;text-align:center}
 .social-login a{margin:15px 5px;display:inline-block}
 .mts-connection{width:430px;height:260px;background:url(..//images/plate.png) 50% 50% no-repeat;background-size:cover;float:left;padding:40px 80px}
+@media (max-width:1200px){.social-login span{font-size:18.33px;line-height:22.16px}
+.mts-connection{width:370px;height:240px;float:none;position:relative;bottom:0;margin:35px auto}
+}
 .mts-connection h2{font-size:20.47px;font-weight:400}
+@media (max-width:1200px){.mts-connection h2{font-size:18.43px}
+}
 .mts-connection h2 a{color:#FFF}
-.content-button{display:block;width:230px;height:60px;border:2px solid #FFF;font-size:18.58px;line-height:22.46px;color:#FFF;font-weight:700;text-transform:uppercase;margin:10px auto;padding-top:15px;background-color:transparent}
+.content-button{display:block;width:230px;height:60px;border:2px solid #FFF;color:#FFF;font-size:18.58px;line-height:22.46px;font-weight:700;text-transform:uppercase;margin:10px auto;padding-top:15px}
 .link-about,.main-content-caption h1,.top-block__link>a{font-family:'Trajan Pro 3',Arial,sans-serif}
+@media (max-width:1200px){.content-button{width:190px;height:55px;font-size:16.72px;line-height:20.22px;background-color:transparent}
 .content-button--big{font-weight:600;font-size:30px;height:80px;padding:0;line-height:80px;margin-top:40px}
+}
 .link-about,.main-content-caption h1,.user__exit>a:before{font-style:normal;font-weight:400}
 .link-about{font-size:22.92px;line-height:27.7px;color:#FFF;margin:20px}
+@media (max-width:1200px){.link-about{font-size:18.33px;line-height:22.16px}
+}
 .main-content-caption{width:550px;padding:0;margin:100px auto 0;position:relative}
 .main-content-caption h1{font-size:50.86px;line-height:61.47px;text-align:center}
 .main-content-caption :after,.main-content-caption :before{position:absolute;content:"";left:50%;margin-left:-115px;width:230px;height:1px;background:#5b5c5e}
 .main-content-caption :before{top:-45px}
 .main-content-caption :after{bottom:-45px}
-@media (max-width:1024px){.main-content-caption{width:45%}
+@media (max-width:1200px){.main-content-caption{width:360px;margin-top:120px}
 .main-content-caption h1{font-size:46.5px;line-height:56.2px}
 .main-content-caption :after,.main-content-caption :before{width:220px}
-.main-content-caption :before{top:48px}
-.main-content-caption :after{bottom:48px}
+.main-content-caption :before{top:-48px}
+.main-content-caption :after{bottom:-48px}
 }
 @media (max-width:767px){.main-content-caption{width:40%}
 .main-content-caption h1{font-size:20.87px;line-height:24.35px}
 .main-content-caption :after,.main-content-caption :before{width:100px}
 .main-content-caption :before{top:25px}
 .main-content-caption :after{bottom:25px}
+}
+.main-content>.content-button{height:80px;font-size:29.04px;line-height:35.1px}
+@media (max-width:1200px){.main-content>.content-button{height:70px;font-size:23.23px;line-height:28.08px}
 }
 .top-block{padding-top:10px}
 .top-block:after,.top-block:before{content:" ";display:table}
