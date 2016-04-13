@@ -1,0 +1,64 @@
+.main-content {
+  &-caption {
+    width: 60%;
+    padding: 0;
+    margin: 10% auto 0;
+    h1 {
+      font-family: 'Trajan Pro 3';
+      font-size: 50.86px;
+      line-height: 61.47px;
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+    }
+    :before, :after {
+      position: absolute;
+      content: "";
+      left: 42%;
+      width: 230px;
+      height: 1px;
+      background: #5b5c5e;
+    }
+    :before {
+      top: 25%;
+    }
+    :after {
+      bottom: 50%;
+    }
+    @media (max-width: 1024px) {
+      width: 45%;
+      //margin: 100px auto;
+
+      h1 {
+        font-size: 46.5px;
+        line-height: 56.2px;
+      }
+      :before, :after {
+        width: 220px;
+      }
+      :before {
+        top: 48px;
+      }
+      :after {
+        bottom: 48px;
+      }
+    }
+    @media (max-width: 767px) {
+      width: 40%;
+      //margin-top: 45px;
+      h1 {
+        font-size: 20.87px;
+        line-height: 24.35px;
+      }
+      :before, :after {
+        width: 100px;
+      }
+      :before {
+        top: 25px;
+      }
+      :after {
+        bottom: 25px;
+      }
+    }
+  }
+}
