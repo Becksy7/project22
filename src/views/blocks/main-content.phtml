@@ -1,10 +1,14 @@
+<div class="top-block">
+    <div class="top-block__link"><a href="#">О сериале</a></div>
+</div>
 <div class="main-content">
-    <a class="link-about" href="#">О сериале</a>
     <div class="main-content-caption">
         <h1>Найди пару среди героев Вестероса</h1>
     </div>
-    <?php include "src/views/helpers/mts-connection.phtml"; ?>
-    <?php include "src/views/helpers/social-login.phtml"; ?>
-    <a class="content-button" href="#">Начать</a>
 
+    <?php include "src/views/helpers/social-login.phtml"; ?>
+    <a class="content-button content-button--big" href="#">Начать</a>
+    <div class="mts-index">
+    <?php include "src/views/helpers/mts-connection.phtml"; ?>
+    </div>
 </div>

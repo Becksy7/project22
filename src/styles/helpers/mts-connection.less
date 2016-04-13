@@ -1,17 +1,24 @@
 .mts-connection {
-width: 430px;
+  width: 430px;
   height: 260px;
-  background: url("@{public}/images/plate.png") no-repeat 50% 50%;
+  background: url("@{public}/images/brush.svg") no-repeat 50% 50%;
   background-size: cover;
-  float: left;
   padding: 40px 80px;
+  margin-top: -200px;
   @media (max-width: 1200px) {
     width: 370px;
     height: 240px;
+    .background-size(contain);
     float: none;
     position: relative;
     bottom: 0;
     margin: 35px auto;
+  }
+  @media (max-width: 767px) {
+    width: 320px;
+    padding: 40px 20px;
+    .background-size(contain);
+
   }
   h2 {
     font-family: @base-font-family;
@@ -25,5 +32,10 @@ width: 430px;
     a{
       color: @white;
     }
+  }
+}
+.mts-index{
+  @media (max-width: 767px) {
+    margin: 0 -20px;
   }
 }
