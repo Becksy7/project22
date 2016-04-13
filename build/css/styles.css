@@ -1,0 +1,155 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html,mark{color:#000}
+.clearfix:after,.wrapper:after{clear:both}
+.clean-ul-list,.client-style ul.clean{list-style:none}
+.header-logo,.layout-main,.layout-wrapper,.wrapper,sub,sup{position:relative}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+.hide,[hidden],template{display:none}
+a{background-color:transparent}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,optgroup,strong{font-weight:700}
+dfn{font-style:italic}
+h1{font-size:2em;margin:.67em 0}
+mark{background:#ff0}
+.footer,.header{background:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:1em 40px}
+hr{box-sizing:content-box;height:0}
+pre,textarea{overflow:auto}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend,td,th{padding:0}
+legend{border:0}
+table{border-collapse:collapse;border-spacing:0}
+.invisible{visibility:hidden}
+.clearfix:after,.clearfix:before{content:" ";display:table}
+.wrapper:after,.wrapper:before{content:'';display:table}
+.clean-ul-list,.clean-ul-list li{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
+@font-face{font-family:'Trajan Pro';src:url(../fonts/TrajanPro-Regular.eot);src:url(../fonts/TrajanPro-Regular.eot?#iefix) format('embedded-opentype'),url(../fonts/TrajanPro-Regular.woff) format('woff'),url(../fonts/TrajanPro-Regular.ttf) format('truetype'),url(../fonts/TrajanPro-Regular.svg#TrajanPro-Regular) format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro-Italic.eot);src:url(../fonts/GothamPro-Italic.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro-Italic.woff2) format('woff2'),url(../fonts/GothamPro-Italic.woff) format('woff'),url(../fonts/GothamPro-Italic.ttf) format('truetype'),url(../fonts/GothamPro-Italic.svg#GothamPro-Italic) format('svg');font-weight:400;font-style:italic}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro-BoldItalic.eot);src:url(../fonts/GothamPro-BoldItalic.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro-BoldItalic.woff2) format('woff2'),url(../fonts/GothamPro-BoldItalic.woff) format('woff'),url(../fonts/GothamPro-BoldItalic.ttf) format('truetype'),url(../fonts/GothamPro-BoldItalic.svg#GothamPro-BoldItalic) format('svg');font-weight:700;font-style:italic}
+@font-face{font-family:'Gotham Pro Narrow';src:url(../fonts/GothamProNarrow-Medium.eot);src:url(../fonts/GothamProNarrow-Medium.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamProNarrow-Medium.woff2) format('woff2'),url(../fonts/GothamProNarrow-Medium.woff) format('woff'),url(../fonts/GothamProNarrow-Medium.ttf) format('truetype'),url(../fonts/GothamProNarrow-Medium.svg#GothamProNarrow-Medium) format('svg');font-weight:500;font-style:normal}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro-BlackItalic.eot);src:url(../fonts/GothamPro-BlackItalic.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro-BlackItalic.woff2) format('woff2'),url(../fonts/GothamPro-BlackItalic.woff) format('woff'),url(../fonts/GothamPro-BlackItalic.ttf) format('truetype'),url(../fonts/GothamPro-BlackItalic.svg#GothamPro-BlackItalic) format('svg');font-weight:900;font-style:italic}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro-Light.eot);src:url(../fonts/GothamPro-Light.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro-Light.woff2) format('woff2'),url(../fonts/GothamPro-Light.woff) format('woff'),url(../fonts/GothamPro-Light.ttf) format('truetype'),url(../fonts/GothamPro-Light.svg#GothamPro-Light) format('svg');font-weight:300;font-style:normal}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro-LightItalic.eot);src:url(../fonts/GothamPro-LightItalic.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro-LightItalic.woff2) format('woff2'),url(../fonts/GothamPro-LightItalic.woff) format('woff'),url(../fonts/GothamPro-LightItalic.ttf) format('truetype'),url(../fonts/GothamPro-LightItalic.svg#GothamPro-LightItalic) format('svg');font-weight:300;font-style:italic}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro-Black.eot);src:url(../fonts/GothamPro-Black.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro-Black.woff2) format('woff2'),url(../fonts/GothamPro-Black.woff) format('woff'),url(../fonts/GothamPro-Black.ttf) format('truetype'),url(../fonts/GothamPro-Black.svg#GothamPro-Black) format('svg');font-weight:900;font-style:normal}
+@font-face{font-family:'Gotham Pro Narrow';src:url(../fonts/GothamProNarrow-Bold.eot);src:url(../fonts/GothamProNarrow-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamProNarrow-Bold.woff2) format('woff2'),url(../fonts/GothamProNarrow-Bold.woff) format('woff'),url(../fonts/GothamProNarrow-Bold.ttf) format('truetype'),url(../fonts/GothamProNarrow-Bold.svg#GothamProNarrow-Bold) format('svg');font-weight:700;font-style:normal}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro.eot);src:url(../fonts/GothamPro.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro.woff2) format('woff2'),url(../fonts/GothamPro.woff) format('woff'),url(../fonts/GothamPro.ttf) format('truetype'),url(../fonts/GothamPro.svg#GothamPro) format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro-MediumItalic.eot);src:url(../fonts/GothamPro-MediumItalic.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro-MediumItalic.woff2) format('woff2'),url(../fonts/GothamPro-MediumItalic.woff) format('woff'),url(../fonts/GothamPro-MediumItalic.ttf) format('truetype'),url(../fonts/GothamPro-MediumItalic.svg#GothamPro-MediumItalic) format('svg');font-weight:500;font-style:italic}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro-Bold.eot);src:url(../fonts/GothamPro-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro-Bold.woff2) format('woff2'),url(../fonts/GothamPro-Bold.woff) format('woff'),url(../fonts/GothamPro-Bold.ttf) format('truetype'),url(../fonts/GothamPro-Bold.svg#GothamPro-Bold) format('svg');font-weight:700;font-style:normal}
+@font-face{font-family:'Gotham Pro';src:url(../fonts/GothamPro-Medium.eot);src:url(../fonts/GothamPro-Medium.eot?#iefix) format('embedded-opentype'),url(../fonts/GothamPro-Medium.woff2) format('woff2'),url(../fonts/GothamPro-Medium.woff) format('woff'),url(../fonts/GothamPro-Medium.ttf) format('truetype'),url(../fonts/GothamPro-Medium.svg#GothamPro-Medium) format('svg');font-weight:500;font-style:normal}
+@font-face{font-family:'Trajan Pro 3';src:url(../fonts/TrajanPro3-Regular.eot);src:url(../fonts/TrajanPro3-Regular.eot?#iefix) format('embedded-opentype'),url(../fonts/TrajanPro3-Regular.woff) format('woff'),url(../fonts/TrajanPro3-Regular.ttf) format('truetype'),url(../fonts/TrajanPro3-Regular.svg#TrajanPro3-Regular) format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:'Trajan Pro 3';src:url(../fonts/TrajanPro3-Bold.eot);src:url(../fonts/TrajanPro3-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/TrajanPro3-Bold.woff) format('woff'),url(../fonts/TrajanPro3-Bold.ttf) format('truetype'),url(../fonts/TrajanPro3-Bold.svg#TrajanPro3-Bold) format('svg');font-weight:700;font-style:normal}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:14px;font-family:'Gotham Pro',Arial,sans-serif}
+html body{color:#FFF;width:auto;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+*,:after,:before{box-sizing:border-box}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 20px}
+.wrapper{margin:0 auto}
+.layout-wrapper{height:100%;display:table;width:100%}
+body,html{height:100%}
+.layout-footer,.layout-header,.layout-main{display:table-row}
+.layout-header{height:100px}
+.layout-footer{height:40px}
+.client-style *{font-family:Arial,sans-serif}
+.client-style a,.client-style a:active,.client-style a:hover,.client-style a:visited{color:#000}
+.client-style ul.clean,.client-style ul.clean li{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
+.client-style .utility-text-left{text-align:left!important}
+.client-style .utility-text-center{text-align:center!important}
+.client-style .utility-text-right{text-align:right!important}
+.client-style .utility-float-left{float:left!important}
+.client-style .utility-float-center{float:center!important}
+.client-style .utility-float-right{float:right!important}
+.client-style .utility-block{display:block!important}
+.client-style .utility-inline{display:inline!important}
+.client-style .utility-inline-block{display:inline-block!important}
+.client-style .strong{font-weight:700!important}
+.client-style .underline{text-decoration:underline!important}
+.client-style .semistrong,.client-style strong.semi{font-weight:500!important}
+.client-style .cursive{font-style:italic!important}
+.header-partner{float:left}
+.header-partner__img{height:80px;margin:10px 0}
+@media (max-width:1200px){.header-partner__img{height:50px;margin:8px 0}
+}
+@media (max-width:1024px){.header-partner__img{height:34px;margin:10px 0}
+}
+.header-logo{margin:0 auto;text-align:center}
+@media (max-width:767px){.header-partner__img{height:26px}
+.header-logo{clear:both}
+}
+.header-logo__img{height:51px;display:inline-block;margin:20px 0}
+.header-logo__season{position:absolute;display:block;width:100%;text-align:center;bottom:-17px;font-family:'Trajan Pro',Arial,sans-serif;font-size:31px}
+@media (max-width:1200px){.header-logo__img{height:34px}
+.header-logo__season{font-size:18px;bottom:-9px}
+}
+@media (max-width:767px){.header-logo__img{height:24px;margin:0 0 10px;max-width:100%}
+.header-logo__season{font-size:12px;bottom:-6px}
+}
+.header-info{float:right;white-space:nowrap}
+.header-info__logo{height:100px;display:inline-block;vertical-align:middle;margin-right:-30px}
+@media (max-width:1200px){.header-info__logo{height:84px;margin-bottom:-10px;margin-right:-40px}
+}
+@media (max-width:767px){.header-info__logo{height:54px;margin-bottom:0;margin-right:-25px}
+}
+.footer__age,.footer__c{vertical-align:middle;margin:0 5px}
+.header-info__time{font-size:34px;display:inline-block;vertical-align:middle;text-align:center}
+@media (max-width:1200px){.header-info__time{font-size:22px}
+}
+@media (max-width:767px){.header-info__time{font-size:20px}
+}
+.header-info__day{font-size:12px;text-align:center;display:block}
+@media (max-width:1200px){.header-info__day{font-size:7px}
+}
+.footer{height:40px;line-height:40px;text-align:center;color:rgba(255,255,255,.5)}
+.footer__c{font-size:11px}
+@media (max-width:767px){.footer__c{font-size:9px;text-align:left}
+}
+.footer__age{display:inline-block;font-size:21px;font-weight:100}
+.main-content-caption h1,.social-login span{font-family:'Trajan Pro 3';font-weight:400;font-style:normal}
+@media (max-width:1024px){.footer{line-height:normal;height:auto;padding:5px 0}
+.footer .container{padding-right:60px;position:relative}
+.footer__age{position:absolute;right:5px;top:50%;margin-top:-10px}
+}
+.page-index{background:url(..//images/bg1.jpg) top center no-repeat #000;background-size:100% auto}
+@media (max-width:768px){.page-index{background:url(..//images/bg1.pad.jpg) top center no-repeat #000;background-size:100% auto}
+}
+.social-login{width:250px;height:100px;margin:8% auto}
+.social-login span{font-size:22.92px;line-height:27.7px}
+.social-login a{margin:15px 5px;display:inline-block}
+.mts-connection{width:430px;height:260px;background:url(../../..../images/plate.png) 50% 50% no-repeat;background-size:cover;border:1px solid red;float:left}
+.main-content-caption{width:60%;padding:0;margin:10% auto 0}
+.main-content-caption h1{font-size:50.86px;line-height:61.47px;text-align:center}
+.main-content-caption :after,.main-content-caption :before{position:absolute;content:"";left:42%;width:230px;height:1px;background:#5b5c5e}
+.main-content-caption :before{top:25%}
+.main-content-caption :after{bottom:50%}
+@media (max-width:1024px){.main-content-caption{width:45%}
+.main-content-caption h1{font-size:46.5px;line-height:56.2px}
+.main-content-caption :after,.main-content-caption :before{width:220px}
+.main-content-caption :before{top:48px}
+.main-content-caption :after{bottom:48px}
+}
+@media (max-width:767px){.main-content-caption{width:40%}
+.main-content-caption h1{font-size:20.87px;line-height:24.35px}
+.main-content-caption :after,.main-content-caption :before{width:100px}
+.main-content-caption :before{top:25px}
+.main-content-caption :after{bottom:25px}
+}

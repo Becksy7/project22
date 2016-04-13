@@ -1,0 +1,102 @@
+.header {
+	background: @black;
+    //height: 100px;
+
+    &-partner{
+        float: left;
+        &__img{
+            height: 80px;
+            margin: 10px 0;
+            @media (max-width: 1200px) {
+                height: 50px;
+                margin: 8px 0;
+            }
+            @media (max-width: 1024px) {
+                height: 34px;
+                margin: 10px 0;
+            }
+            @media (max-width: 767px) {
+                height: 26px;
+            }
+        }
+    }
+    &-logo{
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        @media (max-width: 767px) {
+            clear: both;
+        }
+        &__img{
+            height: 51px;
+            display: inline-block;
+            margin: 20px 0;
+            @media (max-width: 1200px) {
+                height: 34px;
+            }
+            @media (max-width: 767px) {
+                height: 24px;
+                margin: 0 0 10px;
+                max-width: 100%;
+            }
+        }
+        &__season{
+            position: absolute;
+            display: block;
+            width: 100%;
+            text-align: center;
+            bottom: -17px;
+            font-family: @got-font-family;
+            font-size: 31px;
+            @media (max-width: 1200px) {
+                font-size: 18px;
+                bottom: -9px;
+            }
+            @media (max-width: 767px) {
+                font-size: 12px;
+                bottom: -6px;
+            }
+        }
+    }
+    &-info{
+        float: right;
+        white-space: nowrap;
+
+        &__logo{
+            height: 100px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: -30px;
+            @media (max-width: 1200px) {
+                height: 84px;
+                margin-bottom: -10px;
+                margin-right: -40px;
+            }
+            @media (max-width: 767px) {
+                height: 54px;
+                margin-bottom: 0;
+                margin-right: -25px;
+            }
+        }
+        &__time{
+            font-size: 34px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            @media (max-width: 1200px) {
+                font-size: 22px;
+            }
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+        &__day{
+            font-size: 12px;
+            text-align: center;
+            display: block;
+            @media (max-width: 1200px) {
+                font-size: 7px;
+            }
+        }
+    }
+}

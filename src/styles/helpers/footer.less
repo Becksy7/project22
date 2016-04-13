@@ -1,0 +1,38 @@
+.footer {
+	background: @black;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: fade(@white,50%);
+    @media (max-width: 1024px) {
+        line-height: normal;
+        height: auto;
+        padding: 5px 0;
+        .container{
+            padding-right: 60px;
+            position: relative;
+        }
+    }
+    &__c{
+        font-size: 11px;
+        margin: 0 5px;
+        vertical-align: middle;
+        @media (max-width: 767px) {
+            font-size: 9px;
+            text-align: left;
+        }
+    }
+    &__age{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 21px;
+        margin: 0 5px;
+        font-weight: 100;
+        @media (max-width: 1024px) {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            margin-top: -10px;
+        }
+    }
+}
