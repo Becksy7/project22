@@ -5,11 +5,13 @@
     &__tl{
         font-family: @got-font-family;
         font-size: 40px;
-        padding: 0 35px;
+        padding: 0 20px;
+        margin-bottom: 20px;
         text-align: center;
         @media (max-width: 767px) {
             font-size: 20px;
-            padding: 0 25px;
+            padding: 0 10px;
+            margin-bottom: 4px;
         }
     }
 }
@@ -41,9 +43,9 @@
                 .box-sizing(border-box);
                 border: 4px solid @white;
                 .border-radius(50%);
+                background: @blue;
                 img{
                     max-width: 100%;
-                    background: @blue;
                 }
                 @media (max-width: 767px) {
                     width: 50px;
@@ -105,5 +107,11 @@
                 font-size: 8px;
             }
         }
+    }
+}
+.social + .content-button{
+    margin-top: 23px;
+    @media (max-width: 1200px) {
+        margin-top: 10px;
     }
 }

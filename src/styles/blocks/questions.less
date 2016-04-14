@@ -17,6 +17,27 @@
     &__user{
         float: right;
     }
+    .social-login{
+        .social-list{
+            &__i{
+                margin: 0 0 0 5px;
+            }
+            &__lk{
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                .icon{
+                    font-size: 16px;
+                    height: 30px;
+                    line-height: 30px;
+                    width: 30px;
+                    &:before{
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 .user{
     white-space: nowrap;
@@ -104,6 +125,7 @@
         display: block;
         overflow: hidden;
         margin: 10px 0;
+        cursor: pointer;
         span{
             display: block;
             border: 1px solid fade(@white,50%);
