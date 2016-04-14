@@ -11,81 +11,118 @@
     font-size: 18.33px;
     line-height: 22.16px;
   }
+  @media (max-width: 767px) {
+    font-size: 11px;
+    line-height: 13.3px;
+  }
 }
+
 .main-content {
-
-  &-caption {
-    width: 550px;
-    padding: 0;
-    margin: 100px auto 0;
-    position: relative;
-    h1 {
-      font-family: @got-font-family;
-      font-size: 50.86px;
-      line-height: 61.47px;
-      font-weight: normal;
-      font-style: normal;
-      text-align: center;
-    }
-    :before, :after {
-      position: absolute;
-      content: "";
-      left: 50%;
-      margin-left: -115px;
-      width: 230px;
-      height: 1px;
-      background: @gray;
-    }
-    :before {
-      top: -45px;
-    }
-    :after {
-      bottom: -45px;
-    }
+  position: relative;
+  padding-bottom: 60px;
+  .mts-connection_position {
+    position: absolute;
+    left: -30px;
+    bottom: 0;
     @media (max-width: 1200px) {
-      width: 360px;
-      margin-top: 120px;
-
-      h1 {
-        font-size: 46.5px;
-        line-height: 56.2px;
-      }
-      :before, :after {
-        width: 220px;
-      }
-      :before {
-        top: -48px;
-      }
-      :after {
-        bottom: -48px;
-      }
+      position: static;
+      margin: 0 auto;
+      padding-bottom: 0;
     }
     @media (max-width: 767px) {
-      width: 40%;
-      //margin-top: 45px;
-      h1 {
-        font-size: 20.87px;
-        line-height: 24.35px;
-      }
-      :before, :after {
-        width: 100px;
-      }
-      :before {
-        top: 25px;
-      }
-      :after {
-        bottom: 25px;
-      }
+      position: relative;
+      bottom: -40px;
+      z-index: -1;
+      padding-bottom: 0;
     }
   }
-  > .content-button {
-    height: 80px;
-    font-size: 29.04px;
-    line-height: 35.1px;
-    @media (max-width: 1200px) {
-      height: 70px;
-      font-size: 23.23px;
-      line-height: 28.08px;
+&-caption {
+  width: 550px;
+  padding: 0;
+  margin: 100px auto 0;
+  position: relative;
+  h1 {
+    font-family: @got-font-family;
+    font-size: 50.86px;
+    line-height: 61.47px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+  }
+  :before, :after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin-left: -115px;
+    width: 230px;
+    height: 1px;
+    background: @gray;
+  }
+  :before {
+    top: -45px;
+  }
+  :after {
+    bottom: -45px;
+  }
+  @media (max-width: 1200px) {
+    width: 360px;
+    margin-top: 120px;
+
+    h1 {
+      font-size: 46.5px;
+      line-height: 56.2px;
+    }
+
+    :before, :after {
+      width: 220px;
+      margin-left: -110px;
+    }
+
+    :before {
+      top: -48px;
+    }
+
+    :after {
+      bottom: -48px;
     }
   }
+  @media (max-width: 767px) {
+    width: 170px;
+    margin-top: 60px;
+    h1 {
+      font-size: 20.87px;
+      line-height: 24.35px;
+    }
+
+    :before, :after {
+      width: 100px;
+      margin-left: -50px;
+    }
+
+    :before {
+      top: -25px;
+    }
+
+    :after {
+      bottom: -25px;
+    }
+  }
+}
+
+> .content-button {
+  height: 80px;
+  font-size: 29.04px;
+  line-height: 35.1px;
+  @media (max-width: 1200px) {
+    height: 70px;
+    font-size: 23.23px;
+    line-height: 28.08px;
+  }
+  @media (max-width: 767px) {
+    height: 45px;
+    font-size: 18.58px;
+    line-height: 22.46px;
+  }
+}
+
 }

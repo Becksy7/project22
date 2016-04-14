@@ -146,12 +146,17 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 .social-login span{font-family:'Trajan Pro 3';font-size:22.92px;line-height:27.7px;font-weight:400;font-style:normal}
 .content-button,.mts-connection h2{font-family:'Gotham Pro',Arial,sans-serif;font-style:normal;text-align:center}
 .social-login a{margin:15px 5px;display:inline-block}
-.mts-connection{width:430px;height:260px;background:url(..//images/plate.png) 50% 50% no-repeat;background-size:cover;float:left;padding:40px 80px}
+.mts-connection{width:430px;height:260px;background:url(..//images/plate.png) 50% 50% no-repeat;background-size:cover;padding-top:40px}
 @media (max-width:1200px){.social-login span{font-size:18.33px;line-height:22.16px}
-.mts-connection{width:370px;height:240px;float:none;position:relative;bottom:0;margin:35px auto}
+.mts-connection{width:370px;height:240px;margin:35px auto}
+}
+@media (max-width:767px){.social-login span{font-size:11px;line-height:13.3px}
+.mts-connection{width:290px;height:180px;margin:0 auto;padding-top:30px}
 }
 .mts-connection h2{font-size:20.47px;font-weight:400}
 @media (max-width:1200px){.mts-connection h2{font-size:18.43px}
+}
+@media (max-width:767px){.mts-connection h2{font-size:14.74px}
 }
 .mts-connection h2 a{color:#FFF}
 .content-button{display:block;width:230px;height:60px;border:2px solid #FFF;color:#FFF;font-size:18.58px;line-height:22.46px;font-weight:700;text-transform:uppercase;margin:10px auto;padding-top:15px}
@@ -160,8 +165,16 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 .content-button--big{font-weight:600;font-size:30px;height:80px;padding:0;line-height:80px;margin-top:40px}
 }
 .link-about,.main-content-caption h1,.user__exit>a:before{font-style:normal;font-weight:400}
+@media (max-width:767px){.content-button{width:145px;height:40px;font-size:13.38px;line-height:16.17px;padding-top:10px}
+}
 .link-about{font-size:22.92px;line-height:27.7px;color:#FFF;margin:20px}
+.main-content{position:relative;padding-bottom:60px}
+.main-content .mts-connection_position{position:absolute;left:-30px;bottom:0}
 @media (max-width:1200px){.link-about{font-size:18.33px;line-height:22.16px}
+.main-content .mts-connection_position{position:static;margin:0 auto;padding-bottom:0}
+}
+@media (max-width:767px){.link-about{font-size:11px;line-height:13.3px}
+.main-content .mts-connection_position{position:relative;bottom:-40px;z-index:-1;padding-bottom:0}
 }
 .main-content-caption{width:550px;padding:0;margin:100px auto 0;position:relative}
 .main-content-caption h1{font-size:50.86px;line-height:61.47px;text-align:center}
@@ -170,18 +183,20 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 .main-content-caption :after{bottom:-45px}
 @media (max-width:1200px){.main-content-caption{width:360px;margin-top:120px}
 .main-content-caption h1{font-size:46.5px;line-height:56.2px}
-.main-content-caption :after,.main-content-caption :before{width:220px}
+.main-content-caption :after,.main-content-caption :before{width:220px;margin-left:-110px}
 .main-content-caption :before{top:-48px}
 .main-content-caption :after{bottom:-48px}
 }
-@media (max-width:767px){.main-content-caption{width:40%}
+@media (max-width:767px){.main-content-caption{width:170px;margin-top:60px}
 .main-content-caption h1{font-size:20.87px;line-height:24.35px}
-.main-content-caption :after,.main-content-caption :before{width:100px}
-.main-content-caption :before{top:25px}
-.main-content-caption :after{bottom:25px}
+.main-content-caption :after,.main-content-caption :before{width:100px;margin-left:-50px}
+.main-content-caption :before{top:-25px}
+.main-content-caption :after{bottom:-25px}
 }
 .main-content>.content-button{height:80px;font-size:29.04px;line-height:35.1px}
 @media (max-width:1200px){.main-content>.content-button{height:70px;font-size:23.23px;line-height:28.08px}
+}
+@media (max-width:767px){.main-content>.content-button{height:45px;font-size:18.58px;line-height:22.46px}
 }
 .top-block{padding-top:10px}
 .top-block:after,.top-block:before{content:" ";display:table}
@@ -199,7 +214,7 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 }
 .user__exit>a{display:block;width:40px;height:40px;line-height:40px;text-align:center}
 .user__exit>a:before{font-family:got-icons;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;margin-left:.2em;-webkit-font-smoothing:antialiased;content:'\e802'}
-.question__tl,.result__tl,.share-box-logo__season{font-family:'Trajan Pro 3',Arial,sans-serif}
+.about-content h1,.question__tl,.result__tl,.share-box-logo__season{font-family:'Trajan Pro 3',Arial,sans-serif}
 @media (max-width:767px){.user__exit>a{width:20px;height:20px;line-height:20px}
 }
 .user__exit>a:before{color:#FFF;font-size:20px;margin:-2px 0 0;line-height:40px;display:inline-block;vertical-align:middle}
@@ -257,3 +272,31 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 @media (max-width:767px){.share-box-logo__img{height:14px}
 .share-box-logo__season{font-size:8px}
 }
+.about-social{float:right}
+.about-social .social-login{margin-top:0}
+.about-content{margin-left:350px;margin-right:0}
+.about-content h1{font-size:40px;line-height:44px;font-weight:400;text-align:center}
+@media (max-width:1200px){.about-content .video-position{width:690px;margin:0 auto}
+}
+@media (max-width:767px){.about-content .video-position{width:330px;margin:0 auto}
+}
+.about-content video{background-color:#5b5c5e;width:850px;height:470px}
+.about-content article{font-family:'Gotham Pro',Arial,sans-serif;font-size:16px;line-height:21px;padding-right:200px}
+@media (max-width:1200px){.about-content{margin:0 auto}
+.about-content video{width:680px;height:380px}
+.about-content article{font-size:14px;line-height:18px;padding-right:0;margin:0 auto;width:680px}
+}
+@media (max-width:767px){.about-content{margin:0 auto}
+.about-content video{width:320px;height:180px}
+.about-content article{font-size:12px;line-height:16px;padding-right:0;width:320px;margin:0 auto}
+}
+.about-page{position:relative;width:100%}
+.about-page .about-mts{position:absolute;top:0;left:0}
+.about-page .about-mts .mts-connection{width:300px;height:200px;padding:35px 60px}
+@media (max-width:1200px){.about-page .about-mts{bottom:0;left:50%;margin:0 auto;position:static}
+.about-page .about-mts .mts-connection{width:285px;height:190px;padding:35px 60px}
+}
+@media (max-width:767px){.about-page .about-mts{font-size:12px;line-height:16px;padding-right:0}
+}
+.about-page .about-mts h2{font-size:14.33px}
+.about-page .about-mts .content-button{width:145px;height:45px;font-size:13.01px;line-height:15.72px}
