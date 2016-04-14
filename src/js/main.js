@@ -15,6 +15,23 @@ $(function() {
                         }
                     }
                 });
+
+                $('[js-validate]').validate({
+                    errorPlacement: function(){
+                        //empty to prevent displaying error
+                    },
+                    highlight: function(element, errorClass, validClass) {
+                        $(element.form).find('[type=submit]').attr('disabled',true);
+                    },
+                    unhighlight: function(element, errorClass, validClass) {
+                        $(element.form).find('[type=submit]').removeAttr('disabled');
+                    }
+                });
+                $('[js-validate]').find('input[type=radio]').on('change',function(){
+                    if ($(this).is(':checked')){
+                        $(this).parents('form').find('[type=submit]').removeAttr('disabled');
+                    }
+                });
             }
         }
     })()

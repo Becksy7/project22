@@ -215,6 +215,7 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 }
 @media (max-width:767px){.content-button{width:145px;height:40px;font-size:13.38px;line-height:40px}
 }
+.content-button:disabled{-webkit-opacity:.8;-moz-opacity:.8;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(Opacity=80)}
 .link-about{font-size:22.92px;line-height:27.7px;color:#FFF;margin:20px}
 .main-content{position:relative;padding-bottom:60px}
 .main-content .mts-connection_position{position:absolute;left:-30px;bottom:0}
@@ -270,7 +271,7 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 .question__tl{font-size:40px;padding:0 35px;text-align:center}
 @media (max-width:767px){.question__tl{font-size:20px;padding:0 25px}
 }
-.form-group .radio-group{display:block;overflow:hidden;margin:10px 0;cursor:pointer}
+.form-group .radio-group{display:block;overflow:hidden;margin:10px 0;cursor:pointer;position:relative}
 .form-group .radio-group span{display:block;border:1px solid rgba(255,255,255,.5);border-radius:2px;background-clip:padding-box;padding:12px 12px 12px 48px;position:relative;font-size:24px}
 .form-group .radio-group input[type=radio]{position:absolute;top:-40px;left:-40px}
 .form-group .radio-group input[type=radio]:checked+span{border-color:#ed1c24;background-color:rgba(237,28,36,.5)}
