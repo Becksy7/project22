@@ -11,8 +11,31 @@
     font-size: 18.33px;
     line-height: 22.16px;
   }
+  @media (max-width: 767px) {
+    font-size: 11px;
+    line-height: 13.3px;
+  }
 }
+
 .main-content {
+  position: relative;
+  padding-bottom: 60px;
+  .mts-connection_position {
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+    @media (max-width: 1200px) {
+      position: static;
+      margin: 0 auto;
+      padding-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      position: relative;
+      bottom: -40px;
+      z-index: -1;
+      padding-bottom: 0;
+    }
+  }
 
   &-caption {
     max-width: 550px;
@@ -30,6 +53,7 @@
       padding: 33px 0 28px;
       margin: 0;
     }
+
     &:before, &:after {
       position: absolute;
       content: "";
@@ -39,37 +63,55 @@
       height: 1px;
       background: @gray;
     }
-    :before {
-      top: 0;
-    }
-    :after {
-      bottom: 0;
-    }
-    @media (max-width: 1200px) {
-      width: 360px;
-      margin: 50px auto;
 
-      h1 {
-        font-size: 46.5px;
-        line-height: 56.2px;
+      &:before {
+        top: 0;
       }
-      &:before, &:after {
-        width: 220px;
-        margin-left: -110px;
+
+      &:after {
+        bottom: 0;
+      }
+      @media (max-width: 1200px) {
+        width: 360px;
+        margin: 50px auto;
+
+        h1 {
+          font-size: 46.5px;
+          line-height: 56.2px;
+        }
+
+        &:before, &:after {
+          width: 220px;
+          margin-left: -110px;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 40%;
+        margin: 35px auto;
+        h1 {
+          font-size: 20.87px;
+          line-height: 24.35px;
+          padding: 20px 0 17px;
+        }
+
+        &:before, &:after {
+          width: 100px;
+          margin-left: -50px;
+        }
       }
     }
+
     @media (max-width: 767px) {
-      width: 40%;
-      margin: 35px auto;
+      width: 170px;
+      margin-top: 60px;
       h1 {
         font-size: 20.87px;
         line-height: 24.35px;
-        padding: 20px 0 17px;
       }
+
       &:before, &:after {
         width: 100px;
         margin-left: -50px;
       }
     }
   }
-}
