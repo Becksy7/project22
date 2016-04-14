@@ -84,11 +84,17 @@
             display: inline-block;
             vertical-align: middle;
             text-align: center;
+            .day-small{
+                display: none;
+            }
             @media (max-width: 1200px) {
                 font-size: 22px;
             }
             @media (max-width: 767px) {
                 font-size: 20px;
+                .day-small{
+                    display: inline-block;
+                }
             }
         }
         &__day{
@@ -97,6 +103,9 @@
             display: block;
             @media (max-width: 1200px) {
                 font-size: 7px;
+            }
+            @media (max-width: 767px){
+                display: none;
             }
         }
     }
