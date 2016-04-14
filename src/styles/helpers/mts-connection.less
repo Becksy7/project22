@@ -3,15 +3,17 @@ width: 430px;
   height: 260px;
   background: url("@{public}/images/plate.png") no-repeat 50% 50%;
   background-size: cover;
-  float: left;
-  padding: 40px 80px;
+  padding-top: 40px;
   @media (max-width: 1200px) {
     width: 370px;
     height: 240px;
-    float: none;
-    position: relative;
-    bottom: 0;
     margin: 35px auto;
+  }
+  @media (max-width: 767px) {
+    width: 290px;
+    height: 180px;
+    margin: 0 auto;
+    padding-top: 30px;
   }
   h2 {
     font-family: @base-font-family;
@@ -21,6 +23,9 @@ width: 430px;
     text-align: center;
     @media (max-width: 1200px) {
       font-size: 18.43px;
+    }
+    @media (max-width: 767px) {
+      font-size: 14.74px;
     }
     a{
       color: @white;
