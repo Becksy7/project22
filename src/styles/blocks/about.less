@@ -1,7 +1,7 @@
 .about-social {
   float: right;
   .social-login {
-    margin-top: 0;
+    margin: 0;
   }
 }
 
@@ -18,52 +18,53 @@
   .video-position {
 
     @media (max-width: 1200px) {
-      width: 690px;
+      max-width: 690px;
       margin: 0 auto;
     }
     @media (max-width: 767px) {
-      width: 330px;
-      margin: 0 auto;
+      width: auto;
+      margin: 0 -20px;
     }
   }
   video {
     background-color: @gray;
-    width: 850px;
-    height: 470px;
+    width: 100%;
   }
   article {
     font-family: @base-font-family;
     font-size: 16px;
     line-height: 21px;
     padding-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    p{
+      margin: 0 0 10px 0;
+    }
   }
   @media (max-width: 1200px) {
     margin: 0 auto;
-    video {
-      width: 680px;
-      height: 380px;
-
+    h1{
+      margin: 10px 0;
     }
     article {
       font-size: 14px;
       line-height: 18px;
       padding-right: 0;
-      margin: 0 auto;
+      margin: 20px auto 0;
       width: 680px;
     }
   }
   @media (max-width: 767px) {
     margin: 0 auto;
-    video {
-      width: 320px;
-      height: 180px;
+    h1{
+      font-size: 20px;
     }
     article {
       font-size: 12px;
       line-height: 16px;
       padding-right: 0;
       width: 320px;
-      margin: 0 auto;
+      margin: 10px auto 0;
     }
   }
 }
@@ -71,40 +72,4 @@
 .about-page {
   position: relative;
   width: 100%;
-
-  .about-mts {
-    position: absolute;
-    top: 0;
-    left: 0;
-    .mts-connection {
-      width: 300px;
-      height: 200px;
-      padding: 35px 60px;
-    }
-    @media (max-width: 1200px) {
-      bottom: 0;
-      left: 50%;
-      margin: 0 auto;
-      position: static;
-      .mts-connection {
-        width: 285px;
-        height: 190px;
-        padding: 35px 60px;
-      }
-    }
-    @media (max-width: 767px) {
-      font-size: 12px;
-      line-height: 16px;
-      padding-right: 0;
-    }
-    h2 {
-      font-size: 14.33px;
-    }
-    .content-button {
-      width: 145px;
-      height: 45px;
-      font-size: 13.01px;
-      line-height: 15.72px;
-    }
-  }
 }

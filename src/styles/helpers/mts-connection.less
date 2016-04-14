@@ -16,7 +16,7 @@
   }
   @media (max-width: 767px) {
     width: 320px;
-    padding: 40px 20px;
+    padding: 40px 40px;
     .background-size(contain);
   }
   h2 {
@@ -28,9 +28,6 @@
     @media (max-width: 1200px) {
       font-size: 18.43px;
     }
-    @media (max-width: 767px) {
-      font-size: 14.74px;
-    }
     a{
       color: @white;
     }
@@ -39,5 +36,42 @@
 .mts-index{
   @media (max-width: 767px) {
     margin: 0 -20px;
+  }
+}
+.about-page .about-mts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .mts-connection {
+    width: 300px;
+    height: 200px;
+    padding: 35px 60px;
+    margin: 50px 0 0;
+  }
+  @media (max-width: 1200px) {
+    bottom: 0;
+    left: 50%;
+    margin: 0 auto;
+    position: static;
+    .mts-connection {
+      width: 285px;
+      height: 190px;
+      padding: 35px 60px;
+      margin: 35px auto;
+    }
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 16px;
+    padding-right: 0;
+    .mts-connection{
+      margin: 40px -20px 0;
+      width: auto;
+      height: auto;
+      padding: 10px 20px;
+    }
+  }
+  h2 {
+    font-size: 14.33px;
   }
 }
