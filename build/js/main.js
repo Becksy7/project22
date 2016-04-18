@@ -5,7 +5,7 @@ $(function() {
         return {
             init : function() {
                 DummyModule.init();
-                Ya.share2(document.getElementById('my-share'), {
+                /*Ya.share2(document.getElementById('my-share'), {
                     content:  {
                         sharing: {
                             title: 'Заголовок для шэринга',
@@ -14,7 +14,7 @@ $(function() {
                             image: 'images/john_snow.jpg'
                         }
                     }
-                });
+                });*/
 
                 $('[js-validate]').validate({
                     errorPlacement: function(){
