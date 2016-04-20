@@ -16,23 +16,23 @@
     margin: 35px auto;
   }
   @media (max-width: 767px) {
-    min-height: 50px;
+    min-height: 70px;
     .background-size(contain);
       margin: 40px -20px 0;
       background: @red;
       position: relative;
       width: auto;
       height: auto;
-      padding: 10px 20px;
+      padding: 12px 20px;
       &:before{
         content: "";
-        background: url('@{public}images/brush.svg') 59px -2px no-repeat;
-        .background-size(100% auto);
-        width: 400px;
-        height: 24px;
+        background: url('@{public}images/brush-bg.svg') top left repeat-x;
+        width: 100%;
+        height: 15px;
+        .background-size(auto 15px);
         display: block;
         position: absolute;
-        top: -24px;
+        top: -15px;
         right: 0;
       }
       .content-button{
@@ -40,6 +40,7 @@
           width: 120px;
           right: 20px;
           top: 50%;
+          border-width: 1px;
           margin-top: -20px;
       }
     }
