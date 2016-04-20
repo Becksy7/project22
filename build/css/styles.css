@@ -3,7 +3,7 @@
 html,mark{color:#000}
 .header-logo,.layout-main,.layout-wrapper,.wrapper,sub,sup{position:relative}
 .clean-ul-list,.client-style ul.clean,.social-list{list-style:none}
-.header-info,.user{white-space:nowrap}
+.header-info,.mts-connection h2 a,.user{white-space:nowrap}
 .clearfix:after,.question,.question:after,.share-box footer:after,.share-box:after,.top-block:after,.wrapper:after{clear:both}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
@@ -189,19 +189,21 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 .ya-share2 .ya-share2 .ya-share2__container_size_m .ya-share2__item_service_facebook .ya-share2__icon:before{font-style:normal;content:'\e800'}
 .content-button,.mts-connection h2{font-family:'Gotham Pro',Arial,sans-serif;font-style:normal}
 .content-button,.link-about,.top-block__link>a,.user__exit>a{text-decoration:none}
-.mts-connection{width:430px;height:280px;background:url(..//images/brush.svg) 50% 50% no-repeat;background-size:cover;padding:46px 80px;margin-top:-200px}
-.mts-connection h2{font-size:20.47px;font-weight:400;text-align:center}
-@media (max-width:1200px){.mts-connection{width:370px;height:240px;background-size:contain;float:none;position:relative;bottom:0;padding:24px 80px;margin:35px auto}
-.mts-connection h2{font-size:18.43px}
+.mts-connection{width:430px;height:280px;background:url(..//images/brush.svg) 50% 50% no-repeat;background-size:cover;padding:55px 80px;margin-top:-200px}
+@media (max-width:1200px){.mts-connection{width:370px;height:240px;background-size:contain;float:none;position:relative;bottom:0;padding:45px 80px;margin:35px auto}
 }
-@media (max-width:767px){.mts-connection{background-size:contain;margin:40px -20px 0;background:#ed1c24;position:relative;width:auto;height:auto;padding:10px 20px}
+@media (max-width:767px){.mts-connection{min-height:50px;background-size:contain;margin:40px -20px 0;background:#ed1c24;position:relative;width:auto;height:auto;padding:10px 20px}
 .mts-connection:before{content:"";background:url(../images/brush.svg) 59px -2px no-repeat;background-size:100% auto;width:400px;height:24px;display:block;position:absolute;top:-24px;right:0}
 .mts-connection .content-button{position:absolute;width:120px;right:20px;top:50%;margin-top:-20px}
-.mts-connection h2{font-size:12px;padding-right:130px;text-align:left}
+}
+.mts-connection h2{font-size:20px;font-weight:400;text-align:center;margin:0}
+@media (max-width:1200px){.mts-connection h2{font-size:17px}
+}
+@media (max-width:767px){.mts-connection h2{font-size:12px;padding-right:130px;text-align:left}
 }
 .mts-connection h2 a{color:#FFF}
 @media (min-width:1201px){.about-page .about-mts{position:absolute;top:0;left:0}
-.about-page .about-mts .mts-connection{width:300px;height:200px;padding:35px 60px;margin:50px 0 0}
+.about-page .about-mts .mts-connection{width:300px;height:200px;padding:37px 60px;margin:50px 0 0}
 }
 .content-button{display:block;width:230px;height:60px;line-height:60px;border:2px solid #FFF;color:#FFF;font-size:19px;font-weight:700;text-align:center;text-transform:uppercase;margin:10px auto;background-color:transparent}
 .link-about,.main-content-caption h1,.top-block__link>a{font-family:'Trajan Pro 3',Arial,sans-serif}
