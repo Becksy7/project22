@@ -63,39 +63,15 @@
 }
 
 .about-page .about-mts {
-  position: absolute;
-  top: 0;
-  left: 0;
-  .mts-connection {
-    width: 300px;
-    height: 200px;
-    padding: 35px 60px;
-    margin: 50px 0 0;
-  }
-  @media (max-width: 1200px) {
-    bottom: 0;
-    left: 50%;
-    margin: 0 auto;
-    position: static;
+  @media (min-width: 1201px) {
+    position: absolute;
+    top: 0;
+    left: 0;
     .mts-connection {
-      width: 285px;
-      height: 190px;
+      width: 300px;
+      height: 200px;
       padding: 35px 60px;
-      margin: 35px auto;
+      margin: 50px 0 0;
     }
-  }
-  @media (max-width: 767px) {
-    font-size: 12px;
-    line-height: 16px;
-    padding-right: 0;
-    .mts-connection{
-      margin: 40px -20px 0;
-      width: auto;
-      height: auto;
-      padding: 10px 20px;
-    }
-  }
-  h2 {
-    font-size: 14.33px;
   }
 }

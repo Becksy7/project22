@@ -164,26 +164,32 @@
     }
 }
 .tricky-side-block{
+
+
+
     .mts-connection{
-        display: block;
-        float: none;
-        width: 300px;
-        height: 195px;
-        margin-top: -140px;
-        padding: 24px 80px;
-        @media (max-width: 1200px) {
-            margin: 90px auto 20px;
+        @media (min-width: 1201px) {
+            display: block;
+            float: none;
+            width: 300px;
+            height: 195px;
+            margin-top: -140px;
+            padding: 24px 80px;
+            h2{
+                font-size: 14px;
+            }
+            .content-button{
+                width: 146px;
+                height: 40px;
+                padding: 0;
+                line-height: 40px;
+                font-size: 13px;
+                font-weight: 600;
+            }
         }
-        h2{
-            font-size: 14px;
-        }
-        .content-button{
-            width: 146px;
-            height: 40px;
-            padding: 0;
-            line-height: 40px;
-            font-size: 13px;
-            font-weight: 600;
-        }
+        //@media (max-width: 1200px) {
+        //    margin: 90px auto 20px;
+        //}
+
     }
 }
