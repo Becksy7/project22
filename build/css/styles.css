@@ -79,7 +79,7 @@ body,html{height:100%}
 .client-style *{font-family:Arial,sans-serif}
 .client-style a,.client-style a:active,.client-style a:hover,.client-style a:visited{color:#000}
 .client-style ul.clean,.client-style ul.clean li{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
-.header-logo__season,.social-login__txt{font-family:'Trajan Pro 3',Arial,sans-serif}
+.header-logo__season,.social-login__txt,.social__txt{font-family:'Trajan Pro 3',Arial,sans-serif}
 .client-style .utility-text-left{text-align:left!important}
 .client-style .utility-text-center{text-align:center!important}
 .client-style .utility-text-right{text-align:right!important}
@@ -171,8 +171,10 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 @media (max-width:767px){.social-login__txt{font-size:11px;line-height:13.3px}
 }
 .social{margin:10px 0}
-.social__txt{font-size:16px;line-height:36px}
-@media (max-width:1200px){.social__txt{font-size:12px}
+.social__txt{font-size:29px;height:36px;line-height:43px;vertical-align:middle}
+@media (max-width:1199px){.social__txt{font-size:23px}
+}
+@media (max-width:767px){.social__txt{font-size:19px}
 }
 .social-list{padding:0;margin:0}
 .social-list__i{margin:0 0 0 10px;-webkit-opacity:.9;-moz-opacity:.9;opacity:.9;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);filter:alpha(Opacity=90);-webkit-transition:.5s opacity;transition:.5s opacity}
