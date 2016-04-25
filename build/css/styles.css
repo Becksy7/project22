@@ -132,12 +132,12 @@ body,html{height:100%}
 }
 @media (max-width:767px){.header-info__day{display:none}
 }
-.footer__age,.page-error__img,.social-list__i,.social-list__lk,.social-login__txt,.social__txt{display:inline-block}
+.footer__age,.link-again a,.page-error__img,.social-list__i,.social-list__lk,.social-login__txt,.social__txt{display:inline-block}
 .footer{height:40px;line-height:40px;text-align:center;color:rgba(255,255,255,.5)}
 .footer__c{font-size:11px}
 @media (max-width:767px){.footer__c{font-size:9px;text-align:left}
 }
-.page-error,.page-error__txt,.social,.social-list--sharings .icon,.social-login{text-align:center}
+.link-again,.page-error,.page-error__txt,.social,.social-list--sharings .icon,.social-login{text-align:center}
 .footer__age{font-size:21px;font-weight:100}
 @media (max-width:1024px){.footer{line-height:normal;height:auto;padding:5px 0}
 .footer .container{padding-right:60px;position:relative}
@@ -157,6 +157,13 @@ body{background:url(..//images/plain-bg.big.jpg) top center no-repeat #000;backg
 @media (max-width:767px){.page-error__txt{margin-bottom:60px}
 }
 .page-error__txt a{color:#FFF}
+.link-again{margin:50px 0}
+.link-again a{text-decoration:none;color:#FFF;font-size:16px;border-bottom:1px solid rgba(255,255,255,.4)}
+@media (max-width:1199px){.link-again a{font-size:14px}
+}
+@media (max-width:767px){.link-again{margin:30px 0 10px}
+.link-again a{font-size:12px}
+}
 .social-login{margin:25px auto;max-width:220px}
 .social-login__txt{font-size:23px;line-height:48px;vertical-align:middle;font-weight:400;font-style:normal}
 @media (max-width:1200px){.social-login__txt{font-size:18.33px}
