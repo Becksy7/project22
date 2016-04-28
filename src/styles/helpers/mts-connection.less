@@ -1,10 +1,14 @@
 .mts-connection {
   width: 430px;
-  height: 280px;
+  height: 305px;
   background: url("@{public}/images/brush.svg") no-repeat 50% 50%;
   background-size: cover;
-  padding: 55px 80px;
+  padding: 58px 70px;
   margin-top: -200px;
+  .content-button{
+    margin-top: 20px;
+    max-width: 208px;
+  }
   @media (max-width: 1200px) {
     width: 370px;
     height: 240px;
@@ -14,6 +18,9 @@
     bottom: 0;
     padding: 45px 80px;
     margin: 35px auto;
+    .content-button{
+      margin-top: 15px;
+    }
   }
   @media (max-width: 767px) {
     min-height: 70px;
@@ -42,20 +49,21 @@
           top: 50%;
           border-width: 1px;
           margin-top: -20px;
+          font-size: 10px;
       }
     }
   h2 {
     font-family: @base-font-family;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     font-style: normal;
     text-align: center;
     margin: 0;
     @media (max-width: 1200px) {
-      font-size: 17px;
+      font-size: 13px;
     }
     @media (max-width: 767px) {
-      font-size: 12px;
+      font-size: 11px;
       padding-right: 130px;
       text-align: left;
     }
@@ -66,16 +74,22 @@
   }
 }
 
-.about-page .about-mts {
+.about-page .about-mts, .tricky-side-block.mts-connection {
   @media (min-width: 1201px) {
     position: absolute;
     top: 0;
     left: 0;
     .mts-connection {
-      width: 300px;
-      height: 200px;
-      padding: 37px 60px;
+      width: 305px;
+      height: 230px;
+      padding: 40px 60px;
       margin: 50px 0 0;
+      h2{
+        font-size: 13px;
+      }
+      .content-button{
+        margin-top: 14px;
+      }
     }
   }
 }
