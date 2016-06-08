@@ -13,26 +13,26 @@
 </div>
 <div class="question">
 	<div class="question__tl">Тот способ мести, что ведет к успеху:</div>
-	<form class="form">
+	<form class="form" js-validate>
 		<div class="form-group">
 			<label class="radio-group" for="a1">
-				<input type="radio" id="a1" name="question1">
+				<input type="radio" id="a1" name="question1" required>
 				<span>Твой ум способен плавить льдины Винтерфелла</span>
 			</label>
 			<label class="radio-group" for="a2">
-				<input type="radio" id="a2" name="question1">
+				<input type="radio" id="a2" name="question1" required>
 				<span>Блеск золота решает все проблемы</span>
 			</label>
 			<label class="radio-group" for="a3">
-				<input type="radio" id="a3" name="question1" checked>
+				<input type="radio" id="a3" name="question1" required>
 				<span>Клинок — он храбрых сердцем друг</span>
 			</label>
 			<label class="radio-group" for="a4">
-				<input type="radio" id="a4" name="question1">
+				<input type="radio" id="a4" name="question1" required>
 				<span>Нетрудно мстить, коль есть господство средь людей</span>
 			</label>
 		</div>
-		<button type="submit" class="content-button content-button--big">Далее</button>
+		<button type="submit" class="content-button content-button--big" disabled>Далее</button>
 	</form>
 </div>
 <div class="tricky-side-block">

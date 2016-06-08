@@ -32,7 +32,8 @@
                     <div class="header-info">
                         <img class="header-info__logo" src="images/fox-logo.png">
                         <div class="header-info__time">
-                            <span class="header-info__day">по понедельникам</span> 22:00
+                            <div class="header-info__day">по понедельникам</div>
+                            <span class="day-small">ПН</span> 22:00
                         </div>
                     </div>
                     <div class="header-logo">
@@ -59,31 +60,31 @@
                 </div>
                 <div class="question">
                     <div class="question__tl">Тот способ мести, что ведет к успеху:</div>
-                    <form class="form">
+                    <form class="form" js-validate>
                         <div class="form-group">
                             <label class="radio-group" for="a1">
-                                <input type="radio" id="a1" name="question1">
+                                <input type="radio" id="a1" name="question1" required>
                                 <span>Твой ум способен плавить льдины Винтерфелла</span>
                             </label>
                             <label class="radio-group" for="a2">
-                                <input type="radio" id="a2" name="question1">
+                                <input type="radio" id="a2" name="question1" required>
                                 <span>Блеск золота решает все проблемы</span>
                             </label>
                             <label class="radio-group" for="a3">
-                                <input type="radio" id="a3" name="question1" checked="checked">
+                                <input type="radio" id="a3" name="question1" required>
                                 <span>Клинок — он храбрых сердцем друг</span>
                             </label>
                             <label class="radio-group" for="a4">
-                                <input type="radio" id="a4" name="question1">
+                                <input type="radio" id="a4" name="question1" required>
                                 <span>Нетрудно мстить, коль есть господство средь людей</span>
                             </label>
                         </div>
-                        <button type="submit" class="content-button content-button--big">Далее</button>
+                        <button type="submit" class="content-button content-button--big" disabled="disabled">Далее</button>
                     </form>
                 </div>
                 <div class="tricky-side-block">
                     <div class="mts-connection" id="mts-connection">
-                        <h2>Телеканал <b>FOX</b> входит в Базовый пакет <a href="#">Цифрового МТС ТВ</a></h2>
+                        <h2>Телеканал <b>FOX</b> входит в пакет «Базовый» (кроме Москвы и&nbsp;МО) и&nbsp;в&nbsp;пакет «Ничего лишнего» <nobr>(в Москве и МО)</nobr> <a href="http://www.mts.ru/dom/?utm_source=fox_igra&amp;utm_medium=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;utm_campaign=fox_v1_2016" target="_blank">Цифрового МТС ТВ</a></h2>
                         <a href="#" class="content-button">Подключить</a>
                     </div>
                 </div>
@@ -100,6 +101,7 @@
         </footer>
     </div>
     <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/jquery.validate.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

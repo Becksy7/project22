@@ -126,6 +126,7 @@
         overflow: hidden;
         margin: 10px 0;
         cursor: pointer;
+        position: relative;
         span{
             display: block;
             border: 1px solid fade(@white,50%);
@@ -163,56 +164,32 @@
     }
 }
 .tricky-side-block{
+
+
+
     .mts-connection{
-        display: block;
-        float: none;
-        width: 300px;
-        height: 195px;
-        margin-top: -140px;
-        @media (max-width: 1200px) {
-            margin: 90px auto 20px;
-        }
-        @media (max-width: 767px) {
-            margin: 40px -20px 0;
-            background: @red;
-            position: relative;
-            width: auto;
-            height: auto;
-            padding: 10px 20px;
-            &:before{
-                content: "";
-                background: url('@{public}images/plate.png') 59px -2px no-repeat;
-                .background-size(100% auto);
-                width: 400px;
-                height: 37px;
-                display: block;
-                position: absolute;
-                top: -35px;
-                right: 0;
-            }
-        }
-        h2{
-            font-size: 14px;
-            @media (max-width: 767px) {
+        @media (min-width: 1200px) {
+            display: block;
+            float: none;
+            width: 305px;
+            height: 220px;
+            margin-top: -140px;
+            padding: 38px 70px;
+            h2{
                 font-size: 12px;
-                padding-right: 130px;
-                text-align: left;
+            }
+            .content-button{
+                width: 146px;
+                height: 40px;
+                padding: 0;
+                line-height: 40px;
+                font-size: 13px;
+                font-weight: 600;
             }
         }
-        .content-button{
-            width: 146px;
-            height: 40px;
-            padding: 0;
-            line-height: 40px;
-            font-size: 13px;
-            font-weight: 600;
-            @media (max-width: 767px) {
-                position: absolute;
-                width: 120px;
-                right: 20px;
-                top: 50%;
-                margin-top: -20px;
-            }
-        }
+        //@media (max-width: 1200px) {
+        //    margin: 90px auto 20px;
+        //}
+
     }
 }

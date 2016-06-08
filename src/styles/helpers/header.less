@@ -24,8 +24,13 @@
         margin: 0 auto;
         position: relative;
         text-align: center;
+        width: 518px;
+        @media (max-width: 1200px) {
+            width: 346px;
+        }
         @media (max-width: 767px) {
             clear: both;
+            width: 243px;
         }
         &__img{
             height: 51px;
@@ -77,6 +82,7 @@
                 height: 54px;
                 margin-bottom: 0;
                 margin-right: -25px;
+                margin-left: -30px;
             }
         }
         &__time{
@@ -84,11 +90,17 @@
             display: inline-block;
             vertical-align: middle;
             text-align: center;
+            .day-small{
+                display: none;
+            }
             @media (max-width: 1200px) {
                 font-size: 22px;
             }
             @media (max-width: 767px) {
                 font-size: 20px;
+                .day-small{
+                    display: inline-block;
+                }
             }
         }
         &__day{
@@ -97,6 +109,9 @@
             display: block;
             @media (max-width: 1200px) {
                 font-size: 7px;
+            }
+            @media (max-width: 767px){
+                display: none;
             }
         }
     }
